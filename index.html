@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Automated Attendance System</h1>
+
+    <div id="student-form">
+        <h2>Add Student</h2>
+        <input type="text" id="studentName" placeholder="Enter Student Name">
+        <input type="file" id="studentPhoto">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <div id="attendance-section">
+        <h2>Take Attendance</h2>
+        <button onclick="takeAttendance()">Start Attendance</button>
+    </div>
+
+    <div id="attendance-log">
+        <h2>Attendance Log</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="attendanceTable">
+                <!-- Data will be loaded dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
